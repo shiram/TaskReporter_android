@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRT">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assign Task / Role To: "
+        android:id="@+id/user_name"
+        android:textColor="@color/icons"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:inputType="text"
+        android:hint="Task or Role Title"
+        android:background="@drawable/textinput"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinput"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:scrollHorizontally="false"
+        android:id="@+id/description"
+        android:layout_marginTop="10dp"
+        android:hint="Task or Role description"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/start_date"
+        android:inputType="datetime"
+        android:hint="Start Date (dd/mm/yyyy hh:mm AM/PM)"
+        android:background="@drawable/textinput"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/end_date"
+        android:inputType="datetime"
+        android:hint="End Date Date (dd/mm/yyyy hh:mm AM/PM)"
+        android:background="@drawable/textinput"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/assign"
+        android:text="Assign"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/toast_color"
+        android:background="@drawable/buttons"/>
+
+    </LinearLayout>
+</ScrollView>
